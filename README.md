@@ -5,16 +5,16 @@ It quickly scans subdomains based on the domain you enter.
 ***
 
 ## Features
-- Discoveries subdomains automatically
-- Scans quickly based on multythreading
+- Discovers subdomains automatically
+- Fast scanning using multythreading
 - Filters based on HTTP status codes
 - Saves result file autometically
-- CLI
+- CLI(Command Line Interface)
 
 ***
 
 ## Tech stack
-- Python 3
+- python 3
 - requests
 - concurrent.futures (ThreadPoolExecutor)
 
@@ -47,7 +47,7 @@ python subdomain_scanner.py --target example.com --threads 20
 
 ## How it works
 1. Loads the list of subdomains (`subdomains.txt`)
-2. Sends a HTTP request to each subdomain
+2. Sends HTTP requests to each subdomain
 3. Checks the response status code
 4. Saves valid subdomains
 
